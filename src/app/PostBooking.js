@@ -27,15 +27,12 @@ class PostBooking extends Component {
     api.verifyTicket({bookingRefNo : this.state.value}).then( res => {
      return res.json()
     }).then( res => {
-      console.log(res)
-      this.setState({redirect: true, result : res});
-      // this.setState({redirect: true});
-      localStorage.setItem('refno',
-      JSON.stringify(this.state.value));
-      localStorage.setItem('result',
-      JSON.stringify(this.state.result));
-
+      console.log('res: '+ res)
+    
+      localStorage.setItem('result', JSON.stringify(res));
       console.log('localsltorage dtoooo: ' + localStorage.getItem('result'))
+
+      this.setState({redirect: true, result : res});
     })
   };
 
@@ -52,7 +49,7 @@ class PostBooking extends Component {
               <div className="field">
                 <label className="label">Booking ID</label>
                 <div className="control">
-                  <input className="input" type="text" name="bookingid" onChange={this.handleChange} defaultValue="BKN#7c5471ad" required />
+                  <input className="input" type="text" name="bookingid" onChange={this.handleChange} defaultValue="BKN#66b20855" required />
                 </div>
               </div>
               <div className="field">

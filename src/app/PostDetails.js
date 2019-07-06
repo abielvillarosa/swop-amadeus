@@ -11,32 +11,18 @@ class PostDetails extends Component {
   constructor(props){
     super(props);
     this.state = {value: '', redirect: false, result : ''};
-    // console.log(this.props.location.result);
+    this.handleClick = this.handleClick.bind(this);
   }
   componentWillMount(){
-    console.log('bago mag mount')
-    let result = '';
-    result = JSON.parse(localStorage.getItem('result'));
-    console.log('dtoo ' + result);
-
-
-    if (localStorage && localStorage.getItem('result')) {
-       result = JSON.parse(localStorage.getItem('result'));
-       console.log('dtoo ' + result);
-      }
-     this.setState({result: result})
-     if (localStorage && localStorage.getItem('refno')) {
-      result = JSON.parse(localStorage.getItem('refno'));
-      console.log(result);
-     }
-    this.setState({value: result})
+    let result = JSON.parse(localStorage.getItem('result'));
+    this.setState({result: result})
   }
 
   handleClick(e){
     e.preventDefault()
-  
-    console.log('click dtooo')
-    blockchain.postTicket(this.state.result.data.swopRefNo, 15000000).then( res => {
+    let swopRefNo = this.state.result.data.swopRefNo
+
+    blockchain.postTicket(swopRefNo, 15000000).then( res => {
       console.log(res)
     })
   };
