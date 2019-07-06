@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 
 const Home = () => (
-    <div>
-        <header className="App-header">
+    <div class="columns is-mobile is-centered is-vcentered">
+        <header>
         <tr>
         <td>
         <NavLink className="navbar-item" to="/post" activeClassName="is-active" exact>
