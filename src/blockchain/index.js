@@ -1,10 +1,12 @@
 import { ethers } from 'ethers'
 import PublicEntryABI from './abi/PublicEntry.json'
 
+
 export default class BlockchainClient {
 
     constructor(){
-        this.provider = new ethers.providers.Web3Provider(web3.currentProvider)
+        window.ethereum.enable()
+        this.provider = new ethers.providers.Web3Provider(window.web3.currentProvider)
         this.signer = this.provider.getSigner()
         this.entryContract = new ethers.Contract("0x2A8F1Ea7d561A8992b11666252DC4c13a1ab9683", PublicEntryABI, this.signer)
     }
