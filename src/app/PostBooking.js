@@ -38,7 +38,7 @@ class PostBooking extends Component {
 
   render() {
     if (this.state.redirect) {
-    return <Redirect push to={{pathname: "/postdetails", state: {result: (this.state.res)}}}/>;
+    return <Redirect push to={{pathname: "/swop/postdetails", state: {result: (this.state.res)}}}/>;
     }
   return (
     <div className="section is-fullheight">
@@ -55,7 +55,7 @@ class PostBooking extends Component {
               <div className="field">
                 <label className="label">Email ID</label>
                 <div className="control">
-                  <input className="input" default="a@a.com" type="email" name="emailid" required />
+                  <input className="input" defaulValue="123@abc.com" type="email" name="emailid" required />
                 </div>
               </div>
               <NavLink className="navbar-item" to="/postdetails" activeClassName="is-active" exact>

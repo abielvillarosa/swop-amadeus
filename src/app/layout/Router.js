@@ -9,9 +9,9 @@ import PostDetails from './../PostDetails'
 const Router = () => (
   <Switch>
     <Route exact path='/swop' component={Home}/>
-    <Route path='/post' component={PostBooking}/>
-    <Route path='/swop' component={SwopBooking}/>
-    <Route path='/postdetails' render={(props) => <PostDetails {...props} isAuthed={true} />} component={PostDetails}/>
+    <Route path='swop/postbooking' component={PostBooking}/>
+    <Route path='swop/swopbooking' component={SwopBooking}/>
+    <Route path='swop/postdetails' render={(props) => <PostDetails {...props} isAuthed={true} />} component={PostDetails}/>
   </Switch>
 )
 export default Router
