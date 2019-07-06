@@ -5,12 +5,20 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => (
     <div>
+        <header className="App-header">
+        <tr>
+        <td>
         <NavLink className="navbar-item" to="/post" activeClassName="is-active" exact>
         <span><Button color="info" size="large" rounded outlined>Post Booking</Button></span>
         </NavLink>
+        </td>
+        <td>
         <NavLink className="navbar-item" to="/swop" activeClassName="is-active" exact>
         <span><Button color="primary" size="large" rounded outlined>Swop Booking</Button></span>
         </NavLink>
+        </td>
+        </tr>
+        </header>
     </div>
 )
 export default Home
