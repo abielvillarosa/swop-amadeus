@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-// import { Field, Label, Control, Input, Card } from "react-bulma-components/full";
-// import { Heading, Columns, Section, Container } from "react-bulma-components/full";
-import { Media, Image, Card, Heading } from "react-bulma-components/full";
+import { Media, Image, Card, Heading, Content } from "react-bulma-components/full";
 import aircanlogo from './images/aircanada-logo.png';
 import BlockchainClient from '../blockchain'
 
@@ -10,10 +8,11 @@ const blockchain = new BlockchainClient()
 class PostDetails extends Component {
   constructor(props){
     super(props);
-    this.state = {value: '', redirect: false, result : ''};
+    this.state = {value: '', redirect: false, result : '', txHash : ''};
     this.handleClick = this.handleClick.bind(this);
   }
   componentWillMount(){
+    // Get Booking Details from Local Storage
     let result = JSON.parse(localStorage.getItem('result'));
     this.setState({result: result})
   }
@@ -23,34 +22,40 @@ class PostDetails extends Component {
     let swopRefNo = this.state.result.data.swopRefNo
 
     blockchain.postTicket(swopRefNo, 15000000).then( res => {
-      console.log(res)
+      console.log(res);
+      this.setState({txHash : res});
     })
   };
 
   render() {
-    // console.log(this.props.location.result);
     return (
-<div>
-  <p>This is the PostDetails page</p>
-  <td>
-  <Card color="danger">
-      {/* <Card.Image size="1by1" src="http://bulma.io/images/placeholders/1280x960.png" /> */}
-
+  <div class="columns is-mobile is-centered is-vcentered">
+    <td>
+      <br></br>
+      <br></br>
+    <tr>
+      <p>Please review your booking details below and click on <strong>Post</strong> once all the details have been verified.</p>
+      <br></br>
+    </tr>
+    <tr>
+    <Card>
       <Card.Content>
         <Media>
           <Media.Item renderAs="figure" position="left">
-            <Image renderAs="p" size={8} alt="4x4" src={aircanlogo} />
+            <Image renderAs="p" size={15} alt="4x4" src={aircanlogo} />
           </Media.Item>
           <Media.Item>
-            <Heading size={6}>{this.state.result.data.swopRefNo}</Heading>
+            <Heading size={6}>Swop Reference No: {this.state.result.data.swopRefNo}</Heading>
+            <Heading size={6}>Amount: {this.state.result.data.amount}</Heading>
             <Heading size={6}>Origin: {this.state.result.data.origin}</Heading>
             <Heading size={6}>Departure Date/Time: {this.state.result.data.departureDateTime}</Heading>
             <Heading size={6}>Destination: {this.state.result.data.destination}</Heading>
-            <Heading size={6}>ArrivalDateTime: {this.state.result.data.arrivalDateTime}</Heading>
+            <Heading size={6}>Arrival Date/Time: {this.state.result.data.arrivalDateTime}</Heading>
           </Media.Item>
         </Media>
-        {/* <Content>
-        </Content> */}
+        <Content>
+          Transaction Hash: {this.state.txHash}
+        </Content>
         <Card.Footer>
         <Card.Footer.Item renderAs="a" href="#Post" onClick={this.handleClick}>
           Post
@@ -58,8 +63,9 @@ class PostDetails extends Component {
         </Card.Footer>
       </Card.Content>
     </Card>
+    </tr>
     </td>
-</div>
+  </div>
 )};
       }
 

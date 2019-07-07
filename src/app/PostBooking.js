@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-// import { Field, Label, Control, Input, Card } from "react-bulma-components/full";
-// import { Heading, Columns, Form } from "react-bulma-components/full";
 import { NavLink } from 'react-router-dom'
 import APIService from '../api'
 import { Redirect } from 'react-router';
@@ -22,16 +20,11 @@ class PostBooking extends Component {
 
   handleClick(e){
     e.preventDefault()
-  
-    console.log('click dtooo')
     api.verifyTicket({bookingRefNo : this.state.value}).then( res => {
      return res.json()
-    }).then( res => {
-      console.log('res: '+ res)
-    
+    }).then( res => {    
+      // Store booking details on local storage to pass to PostDetails component
       localStorage.setItem('result', JSON.stringify(res));
-      console.log('localsltorage dtoooo: ' + localStorage.getItem('result'))
-
       this.setState({redirect: true, result : res});
     })
   };
@@ -44,25 +37,31 @@ class PostBooking extends Component {
     <div className="section is-fullheight">
       <div className="container">
         <div className="column is-4 is-offset-4">
+          <td>
+          <tr>
+            <p>Enter your original <strong>Booking ID</strong> to retrieve your details from your airline.</p>
+            <br></br>
+          </tr>
           <div className="box">
             <form>
               <div className="field">
                 <label className="label">Booking ID</label>
                 <div className="control">
-                  <input className="input" type="text" name="bookingid" onChange={this.handleChange} defaultValue="BKN#66b20855" required />
+                  <input className="input" type="text" name="bookingid" onChange={this.handleChange} required />
                 </div>
               </div>
               <div className="field">
                 <label className="label">Email ID</label>
                 <div className="control">
-                  <input className="input" defaulValue="123@abc.com" type="email" name="emailid" required />
+                  <input className="input" type="email" name="emailid" required />
                 </div>
               </div>
-              <NavLink className="navbar-item" to="/postdetails" activeClassName="is-active" exact>
+              <NavLink className="navbar-item" to="/swop/postdetails" activeClassName="is-active" exact>
               <button className="button is-block is-info is-fullwidth" onClick={this.handleClick}>Submit</button>
               </NavLink>
             </form>
           </div>
+          </td>
         </div>
       </div>
     </div>
