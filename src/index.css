@@ -1,4 +1,5 @@
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -4210,16 +4211,16 @@ a.list-item {
   justify-content: center;
   overflow: hidden;
   position: fixed;
-  z-index: 40; }
+  z-index: 20; }
   .modal.is-active {
     display: flex; }
 
 .modal-background {
-  background-color: rgba(10, 10, 10, 0.86); }
+  background-color: rgba(255, 255, 255, 0.199); }
 
 .modal-content,
 .modal-card {
-  margin: 0 20px;
+  margin: 0 200px;
   max-height: calc(100vh - 160px);
   overflow: auto;
   position: relative;
@@ -4263,6 +4264,7 @@ a.list-item {
 
 .modal-card-title {
   color: #363636;
+  alignment: center;
   flex-grow: 1;
   flex-shrink: 0;
   font-size: 1.5rem;
@@ -6613,11 +6615,39 @@ label.panel-block {
       flex: none;
       width: 100%; } }
 
+.center, .center-column, .top, .right, .bottom, .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      
+.center-column {
+  flex-direction: column;
+}
+      
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+
+#a { grid-area: a; }
+#b { grid-area: b; }
+#c { grid-area: c; }
+      
+#grid {
+  display: grid;
+  grid-template-areas:
+  "c a b"; 
+  /* grid-row-gap: 1rem; */
+}
+
 .hero {
   align-items: stretch;
+  background: url("/src/app/images/herobanner.png") center / cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  .hero .has-bg-img { background: url('/src/app/images/herobanner.png')center center; background-size:cover; }
   .hero .navbar {
     background: none; }
   .hero .tabs ul {
@@ -7124,7 +7154,11 @@ label.panel-block {
       flex-grow: 1;
       flex-shrink: 1; }
   .hero.is-halfheight {
-    min-height: 50vh; }
+    min-height: 60vh; 
+    background: black url("/src/app/images/herobanner.png") center / cover;}
+  .hero.ishalfheight.has-bg-img { 
+    min-height: 60vh;
+    background: black url('/src/app/images/2.png') center / cover; }
   .hero.is-fullheight {
     min-height: 100vh; }
 
@@ -14542,9 +14576,12 @@ input[type=range].slider {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+ "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+ sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+ monospace; }
