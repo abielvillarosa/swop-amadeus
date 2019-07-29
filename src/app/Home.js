@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
-import { Button } from "react-bulma-components/full";
+// import { Button } from "react-bulma-components/full";
 import { NavLink } from 'react-router-dom'
 import { Redirect } from 'react-router';
 import APIService from '../api'
 import logo from './images/Logo.svg';
-import herobanner from './images/herobanner.png';
 import Grid from './Grid';
-import Grid2 from './Grid';
-// import Modal from './Modal';
 import { Modal } from 'react-bulma-components';
 
 const api = new APIService();
@@ -82,32 +79,7 @@ class Home extends Component {
 		        	<p class="subtitle is-7 has-text-white"> </p>
 		        </div>
               <div id="a" class="left">
-                {/* <NavLink className="navbar-item" to="/swop/postbooking" activeClassName="is-active" exact> */}
-                {/* <NavLink className="navbar-item" activeClassName="is-active" exact> */}
-                <span><a class="button is-white" style={{width: 300}} onClick={() => this.setState({ open: true })}>Post Booking</a></span>
-                {/* <Modal show={this.state.open} onClose={() => this.setState({ open: false })} style={customStyles}>
-                  <div class="modal-background"></div>
-                  <div class="modal-card">
-                    <header class="modal-card-head">
-                      <p class="modal-card-title" alignment="center">Verification</p>
-                      <p class="modal-card-title" alignment="center">Enter your original <strong>Booking ID</strong> to retrieve your details from your airline.</p>
-                      <button class="delete" aria-label="close">Hello</button>
-                    </header>
-                    <section class="modal-card-body">
-                      <form>
-                        <div> Booking ID </div>
-                        <input />
-                        <div> Email Address </div>
-                        <input />
-                      </form>
-                    </section>
-                    <footer class="modal-card-foot">
-                      <button class="button is-success">Submit</button>
-                      <button class="button">Cancel</button>
-                    </footer>
-                  </div>
-                </Modal> */}
-                {/* </NavLink> */}
+                <span><a class="button is-white" style={{width: 300}} onClick={() => this.setState({ open: true })}>Post Booking</a></span>              
               </div>
               <div id="b">
                 <NavLink className="navbar-item" to="/swop/swopbooking" exact>
@@ -122,21 +94,11 @@ class Home extends Component {
           <div>
           <Grid></Grid>
           </div>
-          {/* <div>
-          <Grid2></Grid2>
-          </div> */}
       <div>
          {/* <button onClick={() => this.setState({ open: true })}>Click Me</button> */}
          <Modal show={this.state.open} onClose={() => this.setState({ open: false })} style={customStyles}>
          <div class="modal-background"></div>
          <div class="modal-card">
-         {/* <header class="modal-card-head">
-           <div>
-      <p class="modal-card-title" alignment="center">Verification</p>
-      <p>Enter your original <strong>Booking ID</strong> to retrieve your details from your airline.</p>
-      </div>
-      <button class="delete" aria-label="close">Hello</button>
-    </header> */}
     <section class="modal-card-body">
     <div>
       <p class="modal-card-title" alignment="center">Verification</p>

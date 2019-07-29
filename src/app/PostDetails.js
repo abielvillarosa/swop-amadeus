@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Media, Image, Card, Heading, Content } from "react-bulma-components/full";
 import aircanlogo from './images/aircanada-logo.png';
-import BlockchainClient from '../blockchain'
+import BlockchainClient from '../blockchain';
+import logo from './images/Logo.svg';
 
 const blockchain = new BlockchainClient()
 
@@ -29,16 +30,39 @@ class PostDetails extends Component {
 
   render() {
     return (
-  <div class="columns is-mobile is-centered is-vcentered">
-    <td>
-      <br></br>
-      <br></br>
-    <tr>
-      <p>Please review your booking details below and click on <strong>Post</strong> once all the details have been verified.</p>
-      <br></br>
-    </tr>
-    <tr>
+  // <div class="columns is-mobile is-centered is-vcentered">
+  <div>
+    <section class="hero is-halfheight has-bg-img">
+          <div class="hero-head heading has-text-weight-bold">
+            <div class="columns is-mobile is-marginless">
+              <div class="column left">
+                <figure class="navbar-item image">
+                  <img src={ logo } style={{width: 50 , height: 200 }}></img>
+                </figure>
+              </div>
+              <div class="column right">
+                <figure class="navbar-item image has-text-white center">
+                  Sign In 
+                  <span class="icon is-large">
+                  <i class="fas fa-user" style={{width: 50 , height: 50 }}></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <header class="hero-body">
+    <div class="column right">
+      {/* <br></br>
+      <br></br> */}
+    {/* <tr class="column right"> */}
+      {/* <p>Please review your booking details below and click on <strong>Post</strong> once all the details have been verified.</p>
+      <br></br> */}
+    {/* </tr> */}
+    {/* <tr> */}
     <Card>
+      <Card.Header>
+        <Card.Header.Title>Please review your booking details below and<br></br>  click on Post once all the details have been verified.</Card.Header.Title>
+      </Card.Header>
       <Card.Content>
         <Media>
           <Media.Item renderAs="figure" position="left">
@@ -63,8 +87,10 @@ class PostDetails extends Component {
         </Card.Footer>
       </Card.Content>
     </Card>
-    </tr>
-    </td>
+    {/* </tr> */}
+    </div>
+    </header>
+    </section>
   </div>
 )};
       }

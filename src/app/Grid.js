@@ -34,6 +34,7 @@ class GridBuilder extends Component {
     render () {
     return (
         <section class="has-text-left" style={{ top: 420, left: 80}}>
+        <br></br>
         <div>
             <div class="columns is-mobile is-marginless">
                 <p class="subtitle">Swop before these expire...</p>
@@ -47,7 +48,7 @@ class GridBuilder extends Component {
                     <figure class="image">
                         <img src={ img2 } style={{width: 300 , height: 150 }}></img>
                     </figure>
-                    <p class="subtitle">Date: {this.state.result.data.departureDateTime}</p>
+                    <p class="subtitle">{this.state.result.data.departureDateTime}</p>
                     <p class="subtitle">{this.state.result.data.amount}</p>
                     </article>
                 </div>

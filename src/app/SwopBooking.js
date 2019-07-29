@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Card } from "react-bulma-components/full";
-import { Media, Image } from "react-bulma-components/full";
-import { Heading } from "react-bulma-components/full";
-import aircanlogo from './images/aircanada-logo.png';
-import westjetlogo from './images/westjet-logo.png';
+// import { Card } from "react-bulma-components/full";
+// import { Media, Image } from "react-bulma-components/full";
+// import { Heading } from "react-bulma-components/full";
+// import aircanlogo from './images/aircanada-logo.png';
+// import westjetlogo from './images/westjet-logo.png';
 import BlockchainClient from '../blockchain';
 import APIService from '../api';
 import Grid from './Grid';
@@ -67,13 +67,58 @@ class SwopBooking extends Component {
           </div>
 
           <header class="hero-body">
-            <div class="is-overlay has-text-left" style={{ top: 152, left: 80 }}>
+            {/* <div class="is-overlay has-text-left" style={{ top: 152, left: 80 }}>
               <h4 class="subtitle is-4 has-text-white">Swop your flight!</h4>
-            </div>
-            <div id="grid">
-            <div id="c" class="left" style={{width: 45}}>
-		        	<p class="subtitle is-7 has-text-white"> </p>
-		        </div>
+            </div> */}
+            <div id="grid2">
+              <div id="c" class="right" style={{width: 45}}>
+		        	  <p class="subtitle is-7 has-text-white"> </p>
+		          </div>
+              {/* <div id="a">
+                <div class="is-overlay has-text-left" style={{ top: 152, left: 80 }}>
+                  <h4 class="subtitle is-4 has-text-white">Swop your flight!</h4>
+                </div>
+              </div> */}
+              <div id ="b">
+                <form>
+                <div className="field">
+                  <label className="label">Origin</label>
+                  <div className="control">
+                    <input className="input" type="text" name="bookingid" onChange={this.handleChange} required />
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label">Destination</label>
+                  <div className="control">
+                    <input className="input" type="text" name="bookingid" onChange={this.handleChange} required />
+                  </div>
+                </div>
+                <div className="field">
+                <NavLink className="navbar-item" to="/swop/swopbooking" exact>
+                <span><a class="button is-black" style={{width: 200}}>Search</a></span>
+                </NavLink>
+                </div>
+                </form>
+              </div>
+              <div id="e" class="right" style={{width: 25}}>
+		        	  <p class="subtitle is-7 has-text-white"> </p>
+		          </div>
+              <div id ="d">
+                <form>
+                <div className="field">
+                  <label className="label">Depart</label>
+                  <div className="control">
+                    <input className="input" type="text" name="bookingid" onChange={this.handleChange} required />
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label">Return</label>
+                  <div className="control">
+                    <input className="input" type="text" name="bookingid" onChange={this.handleChange} required />
+                  </div>
+                </div>
+                </form>
+              </div>
               
             </div>
           </header>
@@ -81,7 +126,8 @@ class SwopBooking extends Component {
         </section>
 <Grid></Grid>
 </div>
-<div>
+
+{/* <div>
   <p>This is the SwopBooking page</p>
   <tr>
   <td>
@@ -154,7 +200,7 @@ class SwopBooking extends Component {
     </Card>
     </td>
     </tr> 
-</div>
+</div> */}
 </div>
 )
 

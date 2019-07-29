@@ -6633,6 +6633,8 @@ label.panel-block {
 #a { grid-area: a; }
 #b { grid-area: b; }
 #c { grid-area: c; }
+#d { grid-area: d; }
+#e { grid-area: e; }
       
 #grid {
   display: grid;
@@ -6641,13 +6643,20 @@ label.panel-block {
   /* grid-row-gap: 1rem; */
 }
 
+#grid2 {
+  display: grid;
+  grid-template-areas:
+  "c b e d"
+  /* grid-row-gap: 1rem; */
+}
+
 .hero {
   align-items: stretch;
-  background: url("/src/app/images/herobanner.png") center / cover;
+  background-image: url("/src/app/images/herobanner.png") center / cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .hero .has-bg-img { background: url('/src/app/images/herobanner.png')center center; background-size:cover; }
+  .hero .has-bg-img { background-image: url('/src/app/images/herobanner.png')center center; background-size:cover; }
   .hero .navbar {
     background: none; }
   .hero .tabs ul {
@@ -7155,7 +7164,7 @@ label.panel-block {
       flex-shrink: 1; }
   .hero.is-halfheight {
     min-height: 60vh; 
-    background: black url("/src/app/images/herobanner.png") center / cover;}
+    background: black url(./app/images/herobanner.png) center / cover;}
   .hero.ishalfheight.has-bg-img { 
     min-height: 60vh;
     background: black url('/src/app/images/2.png') center / cover; }
