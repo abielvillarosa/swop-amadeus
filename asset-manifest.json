@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/swop-amadeus/swop/static/css/main.18b8860d.chunk.css",
-    "main.js": "/swop-amadeus/swop/static/js/main.12f7eb5c.chunk.js",
-    "main.js.map": "/swop-amadeus/swop/static/js/main.12f7eb5c.chunk.js.map",
-    "runtime~main.js": "/swop-amadeus/swop/static/js/runtime~main.e25d08b6.js",
-    "runtime~main.js.map": "/swop-amadeus/swop/static/js/runtime~main.e25d08b6.js.map",
-    "static/js/2.bf1f33c9.chunk.js": "/swop-amadeus/swop/static/js/2.bf1f33c9.chunk.js",
-    "static/js/2.bf1f33c9.chunk.js.map": "/swop-amadeus/swop/static/js/2.bf1f33c9.chunk.js.map",
-    "index.html": "/swop-amadeus/swop/index.html",
-    "precache-manifest.44ca080eafdd47f48ebba3a2df157cde.js": "/swop-amadeus/swop/precache-manifest.44ca080eafdd47f48ebba3a2df157cde.js",
-    "service-worker.js": "/swop-amadeus/swop/service-worker.js",
-    "static/css/main.18b8860d.chunk.css.map": "/swop-amadeus/swop/static/css/main.18b8860d.chunk.css.map",
-    "static/media/2.png": "/swop-amadeus/swop/static/media/2.3328e0b7.png",
-    "static/media/3.png": "/swop-amadeus/swop/static/media/3.d35c7bf9.png",
-    "static/media/4.png": "/swop-amadeus/swop/static/media/4.4196c788.png",
-    "static/media/Logo.svg": "/swop-amadeus/swop/static/media/Logo.413abe0d.svg"
+    "main.css": "/swop-amadeus/static/css/main.18b8860d.chunk.css",
+    "main.js": "/swop-amadeus/static/js/main.207129db.chunk.js",
+    "main.js.map": "/swop-amadeus/static/js/main.207129db.chunk.js.map",
+    "runtime~main.js": "/swop-amadeus/static/js/runtime~main.4eebfd3a.js",
+    "runtime~main.js.map": "/swop-amadeus/static/js/runtime~main.4eebfd3a.js.map",
+    "static/js/2.7546d86c.chunk.js": "/swop-amadeus/static/js/2.7546d86c.chunk.js",
+    "static/js/2.7546d86c.chunk.js.map": "/swop-amadeus/static/js/2.7546d86c.chunk.js.map",
+    "index.html": "/swop-amadeus/index.html",
+    "precache-manifest.4c6fc18910da5c4f57763148ad86c41a.js": "/swop-amadeus/precache-manifest.4c6fc18910da5c4f57763148ad86c41a.js",
+    "service-worker.js": "/swop-amadeus/service-worker.js",
+    "static/css/main.18b8860d.chunk.css.map": "/swop-amadeus/static/css/main.18b8860d.chunk.css.map",
+    "static/media/2.png": "/swop-amadeus/static/media/2.3328e0b7.png",
+    "static/media/3.png": "/swop-amadeus/static/media/3.d35c7bf9.png",
+    "static/media/4.png": "/swop-amadeus/static/media/4.4196c788.png",
+    "static/media/Logo.svg": "/swop-amadeus/static/media/Logo.413abe0d.svg"
   }
 }
