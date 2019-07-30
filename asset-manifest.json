@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/swop-amadeus/static/css/main.18b8860d.chunk.css",
-    "main.js": "/swop-amadeus/static/js/main.07a0e3df.chunk.js",
-    "main.js.map": "/swop-amadeus/static/js/main.07a0e3df.chunk.js.map",
-    "runtime~main.js": "/swop-amadeus/static/js/runtime~main.4eebfd3a.js",
-    "runtime~main.js.map": "/swop-amadeus/static/js/runtime~main.4eebfd3a.js.map",
-    "static/js/2.7546d86c.chunk.js": "/swop-amadeus/static/js/2.7546d86c.chunk.js",
-    "static/js/2.7546d86c.chunk.js.map": "/swop-amadeus/static/js/2.7546d86c.chunk.js.map",
-    "index.html": "/swop-amadeus/index.html",
-    "precache-manifest.267d896273d88da3fd1553dd43058307.js": "/swop-amadeus/precache-manifest.267d896273d88da3fd1553dd43058307.js",
-    "service-worker.js": "/swop-amadeus/service-worker.js",
-    "static/css/main.18b8860d.chunk.css.map": "/swop-amadeus/static/css/main.18b8860d.chunk.css.map",
-    "static/media/2.png": "/swop-amadeus/static/media/2.3328e0b7.png",
-    "static/media/3.png": "/swop-amadeus/static/media/3.d35c7bf9.png",
-    "static/media/4.png": "/swop-amadeus/static/media/4.4196c788.png",
-    "static/media/Logo.svg": "/swop-amadeus/static/media/Logo.413abe0d.svg"
+    "main.css": "/swop/static/css/main.18b8860d.chunk.css",
+    "main.js": "/swop/static/js/main.06d108c4.chunk.js",
+    "main.js.map": "/swop/static/js/main.06d108c4.chunk.js.map",
+    "runtime~main.js": "/swop/static/js/runtime~main.b3377398.js",
+    "runtime~main.js.map": "/swop/static/js/runtime~main.b3377398.js.map",
+    "static/js/2.146c418a.chunk.js": "/swop/static/js/2.146c418a.chunk.js",
+    "static/js/2.146c418a.chunk.js.map": "/swop/static/js/2.146c418a.chunk.js.map",
+    "index.html": "/swop/index.html",
+    "precache-manifest.d106d8aa7b73e81a8cb416624cbe558a.js": "/swop/precache-manifest.d106d8aa7b73e81a8cb416624cbe558a.js",
+    "service-worker.js": "/swop/service-worker.js",
+    "static/css/main.18b8860d.chunk.css.map": "/swop/static/css/main.18b8860d.chunk.css.map",
+    "static/media/2.png": "/swop/static/media/2.3328e0b7.png",
+    "static/media/3.png": "/swop/static/media/3.d35c7bf9.png",
+    "static/media/4.png": "/swop/static/media/4.4196c788.png",
+    "static/media/Logo.svg": "/swop/static/media/Logo.413abe0d.svg"
   }
 }
