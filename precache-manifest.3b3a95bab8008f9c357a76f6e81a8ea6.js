@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef51699fbc9ac48c5d00602747103487",
+    "revision": "593ba21aea778da2ca32d82b71684143",
     "url": "/swop-amadeus/index.html"
   },
   {
-    "revision": "36c14ac811bf63b88d85",
-    "url": "/swop-amadeus/static/css/main.18b8860d.chunk.css"
+    "revision": "8adcb6c1e4af8c6d7ed3",
+    "url": "/swop-amadeus/static/css/main.11275f49.chunk.css"
   },
   {
     "revision": "986ac3f08f42bdd1b80a",
     "url": "/swop-amadeus/static/js/2.7546d86c.chunk.js"
   },
   {
-    "revision": "36c14ac811bf63b88d85",
+    "revision": "8adcb6c1e4af8c6d7ed3",
     "url": "/swop-amadeus/static/js/main.aa158c7e.chunk.js"
   },
   {
@@ -34,5 +34,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "413abe0d020f52e86b2ea338a92a5f5f",
     "url": "/swop-amadeus/static/media/Logo.413abe0d.svg"
+  },
+  {
+    "revision": "18e4ebbf3ade4b252434daa3e100969b",
+    "url": "/swop-amadeus/static/media/herobanner.18e4ebbf.png"
   }
 ]);
