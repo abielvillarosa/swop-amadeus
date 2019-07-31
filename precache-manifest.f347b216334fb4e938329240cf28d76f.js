@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4fe7722ea1f4b0b17debd00d0343efca",
+    "revision": "ef51699fbc9ac48c5d00602747103487",
     "url": "/swop-amadeus/index.html"
   },
   {
-    "revision": "25c724a393c2432f8d74",
+    "revision": "36c14ac811bf63b88d85",
     "url": "/swop-amadeus/static/css/main.18b8860d.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/swop-amadeus/static/js/2.7546d86c.chunk.js"
   },
   {
-    "revision": "25c724a393c2432f8d74",
-    "url": "/swop-amadeus/static/js/main.96ad794c.chunk.js"
+    "revision": "36c14ac811bf63b88d85",
+    "url": "/swop-amadeus/static/js/main.aa158c7e.chunk.js"
   },
   {
     "revision": "94e7d77779164c40b437",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/swop-amadeus/precache-manifest.d32538574081ae62326494dd870a80fb.js"
+  "/swop-amadeus/precache-manifest.f347b216334fb4e938329240cf28d76f.js"
 );
 
 self.addEventListener('message', (event) => {
